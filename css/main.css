@@ -3,7 +3,7 @@
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
-    --pink: #bcff69;
+    --green: #bcff69;
 }
 body{
     font-family: var(--sm-font);
@@ -11,7 +11,7 @@ body{
 
 /* button */
 .bg-primary{
-    background-color: var(--pink)!important;
+    background-color: var(--green)!important;
 }
 
 .btn:not(.nav-btns button){
@@ -22,14 +22,14 @@ body{
     border: 1px solid rgb(85, 85, 85);
 }
 .btn:not(.nav-btns button):hover{
-    background-color: var(--pink);
+    background-color: var(--green);
     color: #fff;
-    border-color: var(--pink);
+    border-color: var(--green);
 }
 
 /* text color */
 .text-primary{
-    color: var(--pink)!important;
+    color: var(--green)!important;
 }
 
 /* navbar */
@@ -45,7 +45,7 @@ body{
     font-family: var(--lg-font);
 }
 .nav-link:hover{
-    color: var(--pink)!important;
+    color: var(--green)!important;
 }
 .nav-item{
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
@@ -63,7 +63,7 @@ body{
     border-color: #fff!important;
 }
 .carousel-item .btn:hover{
-    border-color: var(--pink)!important;
+    border-color: var(--green)!important;
 }
 
 /* title */
@@ -72,7 +72,7 @@ body{
     content: "";
     width: 4px;
     height: 50px;
-    background-color: var(--pink);
+    background-color: var(--green);
     left: -20px;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -82,9 +82,9 @@ body{
 
 /* collection */
 .active-filter-btn{
-    background-color: var(--pink)!important;
+    background-color: var(--green)!important;
     color: #fff!important;
-    border-color: var(--pink)!important;
+    border-color: var(--green)!important;
 }
 .filter-button-group .btn:hover{
     color: #fff!important;
@@ -154,9 +154,9 @@ body{
     border-bottom-left-radius: 25px;
 }
 #newsletter .btn{
-    background-color: var(--pink);
+    background-color: var(--green);
     color: #fff;
-    border-color: var(--pink);
+    border-color: var(--green);
 }
 #newsletter .btn:hover{
     background-color: #000;
@@ -174,7 +174,7 @@ footer a{
     transition: color 0.3s ease;
 }
 footer a:hover{
-    color: var(--pink)!important;
+    color: var(--green)!important;
 }
 
 /* media queries */
