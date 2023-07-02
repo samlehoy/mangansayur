@@ -33,6 +33,14 @@ body{
 }
 
 /* navbar */
+.navbar-nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    white-space: nowrap;
+}
 .navbar{
     -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
             box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);

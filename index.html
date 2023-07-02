@@ -21,6 +21,25 @@
                 <span class = "text-uppercase fw-lighter ms-2">ManganSayur</span>
             </a>
 
+
+            <!-- <div class = "order-lg-2 nav-btns">
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-shopping-cart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-heart"></i>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                </button>
+                <button type = "button" class = "btn position-relative">
+                    <i class = "fa fa-search"></i>
+                </button>
+            </div> -->
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
             <div class="order-lg-2 nav-btns">
                 <div class="d-flex align-items-center">
                     <div class="dropdown me-3">
@@ -46,18 +65,14 @@
                         </ul>
                     </div>
                     <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Cari" aria-label="Search">
-                        <button class="btn position-relative" type="submit">
+                        <input id="searchInput" class="form-control me-2 text-muted" type="text" placeholder="Search" aria-label="Search">
+                        <button id="searchBtn" class="btn position-relative" type="submit">
                             <i class="fa fa-search"></i>
                         </button>
                     </form>
                 </div>
             </div>
                     
-
-            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
-                <span class = "navbar-toggler-icon"></span>
-            </button>
 
             <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
                 <ul class = "navbar-nav mx-auto text-center">
