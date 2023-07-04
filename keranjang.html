@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.3.0-dist/css/bootstrap.min.css">
+    <link rel = "stylesheet" href = "css/main.css"> 
+
+
+</head>
+<body>
+    <section class="h-100" style="background-color: #eee;">
+        <div class="container h-100 py-5">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-10">
+              <div class="mantap">
+                <a class="btn btn-lg btn-primary w-6 fs-6" href="index.html" role="button">Kembali Belanja</a>
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                  <h3 class="fw-normal mb-0 text-black">Keranjang Saya</h3>
+                  <div>
+                    <p class="mb-0"><span class="text-muted">Urutkan Berdasarkan:</span></p>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Harga</option>
+                      <option value="1">Kategori</option>
+                      <option value="2">Jumlah</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                        class="img-fluid rounded-3" alt="Cotton T-shirt">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">Basic T-shirt</p>
+                      <p><span class="text-muted">Size: </span>M <span class="text-muted">Color: </span>Grey</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button class="btn btn-"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+      
+                      <input id="form1" min="0" name="quantity" value="2" type="number"
+                        class="form-control form-control-sm" />
+      
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">$499.00</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+
+      
+              <div class="card rounded-3 mb-4">
+                <div class="card-body p-4">
+                  <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-md-2 col-lg-2 col-xl-2">
+                      <img
+                        src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
+                        class="img-fluid rounded-3" alt="Cotton T-shirt">
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-3">
+                      <p class="lead fw-normal mb-2">Basic T-shirt</p>
+                      <p><span class="text-muted">Size: </span>M <span class="text-muted">Color: </span>Grey</p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-xl-2 d-flex">
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                        <i class="fas fa-minus"></i>
+                      </button>
+      
+                      <input id="form1" min="0" name="quantity" value="2" type="number"
+                        class="form-control form-control-sm" />
+      
+                      <button class="btn btn-link px-2"
+                        onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                        <i class="fas fa-plus"></i>
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                      <h5 class="mb-0">$499.00</h5>
+                    </div>
+                    <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                      <a href="#!" class="text-danger"><i class="fas fa-trash fa-lg"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="card mb-4">
+                <div class="card-body p-4 d-flex flex-row">
+                  <div class="form-outline flex-fill">
+                    <input type="text" id="form1" class="form-control form-control-lg" />
+                    <label class="form-label" for="form1">Discound code</label>
+                  </div>
+                  <button type="button" class="btn btn-outline-warning btn-lg ms-3">Apply</button>
+                </div>
+              </div>
+      
+              <div class="card">
+                <div class="card-body">
+                  <button type="button" class="btn btn-warning btn-block btn-lg">Proceed to Pay</button>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src = "bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
