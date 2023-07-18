@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+        <!-- fontawesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- bootstrap css -->
+        <link rel = "stylesheet" href = "bootstrap-5.3.0-dist/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "css/main.css"> 
+
+        <style>
+            .container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+            h3 {
+              text-align: center;
+            }
+            .container2{
+                display: flex;
+                justify-content: flex-end;
+               
+
+            }
+          </style>
+</head>
+<body>
+    <section class="h-100" style="background-color: #eee;">
+        <div class="container h-100 py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-10">
+                    <div class="mantap">
+                        <a class="btn btn-lg btn-primary w-6 fs-6" href="keranjang.html" role="button">Keranjang</a>
+                            <div class="container">
+                                <h3 class="fw-normal mb-0 text-black">Checkout</h3>
+                            </div>
+                <div>
+                    <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2">Jl. Ring Road Utara, Ngringin, Condongcatur, Kec. Depok, Kabupaten Sleman, Daerah Istimewa Yogyakarta 55281</textarea>
+                </div><br>
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                      <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="images/mangga.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <p class="lead fw-normal mb-2">Mangga</p>
+                            <h6 class="mb-0">Rp 20.000</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1"></div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h5 class="mb-0">2 kg</h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                      <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-md-2 col-lg-2 col-xl-2">
+                            <img
+                              src="images/paprika.jpg"
+                              class="img-fluid rounded-3" alt="Cotton T-shirt">
+                          </div>
+                          <div class="col-md-2 col-lg-2 col-xl-2">
+                            <p class="lead fw-normal mb-2">Paprika</p>
+                            <h6 class="mb-">Rp 300.000</h6>
+                          </div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1"></div>
+                          <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                            <h5 class="mb-0">5 kg</h5>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <h4 class="mb-3">Opsi Pengiriman</h4>
+                            <div class="container2">
+                                <h6 class="mb-0">Rp 20.000</h6>
+                            </div>
+                            <h6>Reguler</h6>
+                            <h7>estimasi diterima pada tanggal 7-9 juli 2023</h7>
+ 
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card rounded-3 mb-4">
+                    <div class="card-body p-4">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <h4 class="mb-3">Pembayaran</h4>
+  
+                            <div class="my-3">
+                              <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Kartu kredit</label>
+                              </div>
+                              <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Kartu debit</label>
+                              </div>
+                              <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                              </div>
+                            </div>
+                    
+                            <div class="row gy-3">
+                              <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Nama pemilik kartu</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-body-secondary">Masukkan nama lengkap yang tertera pada kartu.</small>
+                                <div class="invalid-feedback">
+                                  Nama pada kartu diperlukan
+                                </div>
+                              </div>
+                    
+                              <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Nomor kartu kredit</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                  Nomor kartu kredit diperlukan
+                                </div>
+                              </div>
+                    
+                            <hr class="my-4">
+                    
+                            
+                          </form>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: center;">
+                    <button class="btn btn-lg btn-primary w-6 fs-6" type="submit">Proses Pembayaran</button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src = "bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>

@@ -14,6 +14,10 @@ body{
     background-color: var(--green)!important;
 }
 
+.btn-outline-success:hover{
+    
+}
+
 .btn:not(.nav-btns button){
     background-color: #fff;
     color: rgb(85, 85, 85);

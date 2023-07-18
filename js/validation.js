@@ -22,6 +22,14 @@
     // Get the values entered in the email and password fields
     var email = document.getElementById("emailInput").value;
     var password = document.getElementById("passwordInput").value;
+    var passwordReinput = document.getElementById("passwordReinput").value;
+    var username = document.getElementById("userInput").value;
+
+    // Validate password match
+    if (username.length < 1) {
+        alert("Tolong masukkan username");
+        return false;
+    }
 
     // Validate email format
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -33,6 +41,12 @@
     // Validate password length
     if (password.length < 6) {
         alert("Password must be at least 6 characters long");
+        return false;
+    }
+
+    // Validate password match
+    if (password !== passwordReinput) {
+        alert("Passwords do not match");
         return false;
     }
 
